@@ -1,0 +1,24 @@
+.btn {
+    width: 153px;
+    height: 35px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 17.5px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #222222;
+    // &:hover {
+    //     bo
+    // }
+    &_banner {
+        box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.1);
+        // width: 230px;
+        // height: 80px;
+        border: 5.0px solid rgba(0,0,0,0.1);
+        border-radius: 20.0px;
+        font-family: Roboto;
+        // line-height: 30px;
+    }
+}

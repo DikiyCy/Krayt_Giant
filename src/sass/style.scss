@@ -1,1 +1,30 @@
+@import 'base/variable';
 
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+body {
+    position: relative;
+    // max-width: 1920px;
+    // margin: 0 auto;
+}
+
+
+// section
+@import 'block/header';
+@import 'block/banner';
+@import 'block/function';
+@import 'block/helpdesk';
+@import 'block/slider';
+@import 'block/video';
+@import 'block/feedback';
+@import 'block/download';
+@import 'block/footer';
+
+// block
+@import 'block/button';
+
+// adaptive
+@import 'base/media';
