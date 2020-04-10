@@ -7,8 +7,6 @@
 }
 body {
     position: relative;
-    // max-width: 1920px;
-    // margin: 0 auto;
 }
 
 
@@ -25,6 +23,10 @@ body {
 
 // block
 @import 'block/button';
+@import 'block/list-check';
+@import 'block/title';
+@import 'block/subtitle';
+@import 'block/arrow';
 
 // adaptive
 @import 'base/media';

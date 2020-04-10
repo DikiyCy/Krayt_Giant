@@ -1,0 +1,14 @@
+.subtitle {
+    margin: 0 auto;
+    max-width: 656px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $sub-text-color;
+    text-align: center;
+    &_left {
+        text-align: left;
+    }
+
+}

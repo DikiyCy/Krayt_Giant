@@ -1,44 +1,14 @@
 .banner {
-    // background: $main-gradient;
     background: url('../img/section_1_banner/bg_1.png') center center/cover no-repeat;
     min-height: 800px;
     padding: 210px 0 125px 0;
     &__title {
         max-width: 475px;
-        margin-bottom: 22px;
+        margin-bottom: 21px;
         font-family: Dosis;
         font-size: 54px;
         line-height: 60px;
         font-weight: 600;
         color: #ffffff;
-    }
-    &__subtitle {
-        max-width: 490px;
-        font-family: Roboto;
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 300;
-        color: #ffffff;
-        margin-bottom: 15px;
-    }
-    &__item {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        font-family: Roboto;
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 400;
-        color: #ffffff;
-        li {
-            margin-bottom: 10px;
-            // vertical-align: top;
-            span {
-                margin-right: 17px;
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: 400;
-            }
-        }
     }
 }

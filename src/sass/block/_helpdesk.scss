@@ -1,0 +1,32 @@
+.helpdesk {
+    min-height: 709px;
+    padding: 173px 0;
+    background-color: #fff;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img{
+        width: 50%;
+        position: relative;
+        img {
+            position: absolute;
+            top: -392px;
+            left: -390px;
+            width: 1206px;
+        }
+    }
+    .wrapper {
+        width: 50%;
+        // задать ---- min-width: ;
+        padding-left: 15px;
+        .title {
+            margin-bottom: 26px;
+        }
+        .subtitle {
+            margin-bottom: 69px;
+        }
+
+    }
+}
