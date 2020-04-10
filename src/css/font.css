@@ -1,0 +1,146 @@
+/* Roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: url('subset-Roboto-Medium.woff2') format('woff2'),
+        url('subset-Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('subset-Roboto-Light.woff2') format('woff2'),
+        url('subset-Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('subset-Roboto-Regular.woff2') format('woff2'),
+        url('subset-Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* dosis */
+@font-face {
+    font-family: 'Dosis';
+    src: url('subset-Dosis-Regular.woff2') format('woff2'),
+        url('subset-Dosis-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('subset-Dosis-Medium.woff2') format('woff2'),
+        url('subset-Dosis-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('subset-Dosis-SemiBold.woff2') format('woff2'),
+        url('subset-Dosis-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('subset-Dosis-Bold.woff2') format('woff2'),
+        url('subset-Dosis-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* icomoon */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?bhbric');
+    src:  url('fonts/icomoon.eot?bhbric#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?bhbric') format('truetype'),
+      url('fonts/icomoon.woff?bhbric') format('woff'),
+      url('fonts/icomoon.svg?bhbric#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-cog:before {
+    content: "\f013";
+  }
+  .icon-gear:before {
+    content: "\f013";
+  }
+  .icon-tags:before {
+    content: "\f02c";
+  }
+  .icon-play:before {
+    content: "\f04b";
+  }
+  .icon-check-circle:before {
+    content: "\f058";
+  }
+  .icon-twitter:before {
+    content: "\f099";
+  }
+  .icon-facebook:before {
+    content: "\f09a";
+  }
+  .icon-facebook-f:before {
+    content: "\f09a";
+  }
+  .icon-fire-extinguisher:before {
+    content: "\f134";
+  }
+  .icon-file-text:before {
+    content: "\f15c";
+  }
+  .icon-long-arrow-left:before {
+    content: "\f177";
+  }
+  .icon-long-arrow-right:before {
+    content: "\f178";
+  }
+  .icon-dribbble:before {
+    content: "\f17d";
+  }
+  .icon-behance:before {
+    content: "\f1b4";
+  }
+  .icon-life-bouy:before {
+    content: "\f1cd";
+  }
+  .icon-life-buoy:before {
+    content: "\f1cd";
+  }
+  .icon-life-ring:before {
+    content: "\f1cd";
+  }
+  .icon-life-saver:before {
+    content: "\f1cd";
+  }
+  .icon-support:before {
+    content: "\f1cd";
+  }
+  .icon-paint-brush:before {
+    content: "\f1fc";
+  }
