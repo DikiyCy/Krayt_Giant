@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DikiyCy/RunSmart.git"
+    "url": "git+https://github.com/DikiyCy/Krayt_Giant.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DikiyCy/RunSmart/issues"
+    "url": "https://github.com/DikiyCy/Krayt_Giant/issues"
   },
-  "homepage": "https://github.com/DikiyCy/RunSmart#readme",
+  "homepage": "https://github.com/DikiyCy/Krayt_Giant#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
