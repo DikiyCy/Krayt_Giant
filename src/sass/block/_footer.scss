@@ -1,0 +1,32 @@
+.footer {
+    min-height: 180px;
+    background-color: #222222;
+    padding: 50px 0 58px 0;
+    &__link {
+        text-align: center;
+        margin-bottom: 15px;
+        a {
+            font-size: 18px;
+            line-height: 36px;
+            font-weight: 400;
+            color: #fff;
+            margin: 0 13px;
+            &:hover {
+                text-decoration: none;
+                span {
+                    background: $main-gradient;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+    &__text {
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+}
