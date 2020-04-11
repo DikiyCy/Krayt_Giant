@@ -22,4 +22,14 @@
         line-height: 0;
         vertical-align: middle;
     }
+    &_price {
+        width: 139px;
+        height: 40px;
+        background-color: #ffffff;
+        border: 1.0px solid #eeeeee;
+        border-radius: 20.0px;
+        // &:hover {
+        //     background-color: red
+        // }
+    }
 }
