@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?bhbric');
-  src:  url('../fonts/icomoon.eot?bhbric#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?bhbric') format('truetype'),
-    url('../fonts/icomoon.woff?bhbric') format('woff'),
-    url('../fonts/icomoon.svg?bhbric#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?xddfof');
+  src:  url('../fonts/icomoon.eot?xddfof#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?xddfof') format('truetype'),
+    url('../fonts/icomoon.woff?xddfof') format('woff'),
+    url('../fonts/icomoon.svg?xddfof#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -60,6 +60,15 @@
 }
 .icon-long-arrow-right:before {
   content: "\f178";
+}
+.icon-apple:before {
+  content: "\f179";
+}
+.icon-windows:before {
+  content: "\f17a";
+}
+.icon-android:before {
+  content: "\f17b";
 }
 .icon-dribbble:before {
   content: "\f17d";
