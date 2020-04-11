@@ -2,7 +2,7 @@
     padding: 119px 0 0 0;
     background-color: $back-color;
     min-height: 917px;
-    .container {
+    &__carousel {
         position: relative;
     }
 }
