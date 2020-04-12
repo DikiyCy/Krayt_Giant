@@ -1,0 +1,28 @@
+.close {
+    position: absolute;
+    top:30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    &:hover {
+        .close__top, .close__bottom {
+            background: $main-gradient;
+        }
+    }
+    &__top, &__bottom {
+        width: 50%;
+        height: 5%;
+        background-color: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    &__top {
+        transform: translateX(-50%) rotate(45deg);
+    }
+    &__bottom {
+        transform: translateX(-50%) rotate(-45deg);
+    }
+}
