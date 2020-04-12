@@ -23,6 +23,38 @@ window.addEventListener('DOMContentLoaded', function() {
 
     $('.functions-catalog_close').each(function(i) {
         $('.functions-catalog_hidden').fadeOut('fast');
-
     });
+
+    //--------slider-------------
+    let addrImg = [
+        'img/section_4_slider/img_0.png',
+        'img/section_4_slider/img_1.png',
+        'img/section_4_slider/img_2.png',
+        'img/section_4_slider/img_3.png',
+        'img/section_4_slider/img_4.png',
+        'img/section_4_slider/img_5.png',
+        'img/section_4_slider/img_6.png'
+    ];
+
+    $('.slider-arrow__left').on('click', function() {
+
+        for (let i = 0; i < addrImg.length; i++) {
+            $('.slider-carousel__img' + i).attr('src', addrImg[i + 1]);
+        }
+
+        $('.slider-carousel__img6').attr('src', addrImg[0]);
+        addrImg.push(addrImg.shift());
+    });
+
+
+    $('.slider-arrow__right').on('click', function() {
+
+        for (let i = 1; i < addrImg.length; i++) {
+            $('.slider-carousel__img' + i).attr('src', addrImg[i - 1]);
+        }
+
+        $('.slider-carousel__img0').attr('src', addrImg[addrImg.length - 1]);
+        addrImg.unshift(addrImg.pop());
+    });
+
 });
