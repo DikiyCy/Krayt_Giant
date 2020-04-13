@@ -66,11 +66,10 @@ window.addEventListener('DOMContentLoaded', function() {
         'feedback-item_order-3'
     ];
 
-
     $('.feedback-arrow__left').on('click', function() {
 
         for (let i = 1; i < arrOrder.length; i++) {
-            $('.' + arrOrder[i]).removeClass('' + arrOrder[i]).addClass('' + arrOrder[i--]);
+            $('.' + arrOrder[i]).removeClass('' + arrOrder[i]).addClass('' + arrOrder[i - 1]);
         }
         $('.' + arrOrder[0]).removeClass('' + arrOrder[0]).addClass('' + arrOrder[3]);
 
@@ -80,17 +79,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
     $('.feedback-arrow__right').on('click', function() {
 
-        // $('.' + arrOrder[3]).removeClass('' + arrOrder[3]).addClass('' + arrOrder[0]);
-
-        // for (let i = arrOrder.length - 1; i < 0; i--) {
-        //     $('.' + arrOrder[i]).removeClass('' + arrOrder[i]).addClass('' + arrOrder[i + 1]);
-        // }
-        // $('.' + arrOrder[0]).removeClass('' + arrOrder[0]).addClass('' + arrOrder[arrOrder.length-1]);
-
         $('.' + arrOrder[3]).removeClass('' + arrOrder[3]).addClass('' + arrOrder[0]);
-        $('.' + arrOrder[2]).removeClass('' + arrOrder[2]).addClass('' + arrOrder[3]);
-        $('.' + arrOrder[1]).removeClass('' + arrOrder[1]).addClass('' + arrOrder[2]);
-        $('.' + arrOrder[0]).removeClass('' + arrOrder[0]).addClass('' + arrOrder[1]);
+
+        for (let i = arrOrder.length - 2; i >= 0; i--) {
+            $('.' + arrOrder[i]).removeClass('' + arrOrder[i]).addClass('' + arrOrder[i + 1]);
+        }
     });
 
 });
