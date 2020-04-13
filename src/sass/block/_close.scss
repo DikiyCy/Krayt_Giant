@@ -1,7 +1,7 @@
 .close {
     position: absolute;
-    top:20px;
-    right: 10px;
+    top:10%;
+    left: 85%;
     width: 70px;
     height: 70px;
     cursor: pointer;
@@ -25,4 +25,8 @@
     &__bottom {
         transform: translateX(-50%) rotate(-45deg);
     }
+}
+.video_close {
+    left: 90%;
+    top: 3  %;
 }

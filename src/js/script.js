@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function() {
         $(this).find('.functions-catalog_hidden').toggleClass('hidden');
     });
 
-    $('.functions-catalog_close').each(function(i) {
+    $('.functions-catalog_close').each(function() {
         $('.functions-catalog_hidden').fadeOut('fast');
     });
 
@@ -36,7 +36,8 @@ window.addEventListener('DOMContentLoaded', function() {
         'img/section_4_slider/img_6.png'
     ];
 
-    $('.slider-arrow__left').on('click', function() {
+// click on left arrow
+    $('.slider-arrow__left, .slider-carousel__posit_1, .slider-carousel__posit_2, .slider-carousel__posit_3').on('click', function() {
 
         for (let i = 0; i < addrImg.length; i++) {
             $('.slider-carousel__img' + i).attr('src', addrImg[i + 1]);
@@ -46,8 +47,8 @@ window.addEventListener('DOMContentLoaded', function() {
         addrImg.push(addrImg.shift());
     });
 
-
-    $('.slider-arrow__right').on('click', function() {
+// click on right arrow
+    $('.slider-arrow__right, .slider-carousel__posit_5, .slider-carousel__posit_6, .slider-carousel__posit_7').on('click', function() {
 
         for (let i = 0; i < addrImg.length; i++) {
             $('.slider-carousel__img' + i).attr('src', addrImg[i - 1]);
@@ -65,7 +66,7 @@ window.addEventListener('DOMContentLoaded', function() {
         'feedback-item_order-2',
         'feedback-item_order-3'
     ];
-
+// click on left arrow
     $('.feedback-arrow__left').on('click', function() {
 
         for (let i = 1; i < arrOrder.length; i++) {
@@ -75,8 +76,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     });
 
-
-
+// click on right arrow
     $('.feedback-arrow__right').on('click', function() {
 
         $('.' + arrOrder[3]).removeClass('' + arrOrder[3]).addClass('' + arrOrder[0]);

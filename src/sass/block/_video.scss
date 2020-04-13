@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &-hidden {
         background-color: rgba(0,0,0,0.5);
         position: fixed;
@@ -19,7 +20,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border: 5px solid #fff;
-            
         }
     }
     &__play {
@@ -47,7 +47,6 @@
         }
         &:active {
             box-shadow: 0px 0px 30px 0px rgba(255,255,255,1);
-
         }
     }
 }
