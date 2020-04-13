@@ -1,5 +1,4 @@
 .download {
-    min-width: 471px;
     background: $main-gradient;
     padding: 120px 0 120px 0;
     .title {
@@ -10,58 +9,54 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        .item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffffff;
-            border-radius: 3.0px;
-            box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.07);
-            &__icon {
-                width: 115px;
-                height: 115px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #f7fafc;
-                border-radius: 3.0px;
-                span {
-                    font-size: 54px;
-                    color: $sub-text-color;
-                    text-shadow:rgba(0,0,0,0.1) 0 0 2px;
-                }
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 3.0px;
+        box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.07);
+        &:hover, &:hover {
+            text-decoration: none;
+            span {
+                background: $main-gradient;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
-            &__text {
-                width: 245px;
-                padding-left: 19px;
-                &-title {
-                    font-family: Dosis;
-                    font-size: 30px;
-                    line-height: 24px;
-                    font-weight: 600;
-                    color: #222222;
-                    margin-bottom: 11px;
-                }
-                &-subtitle {
-                    font-family: Roboto;
-                    font-size: 14px;
-                    line-height: 24px;
-                    font-weight: 300;
-                    color: #777777;
-                }
-            }
-            &:hover, &:hover {
-                text-decoration: none;
-
-                span {
-                    background: $main-gradient;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-
-            }
-
         }
     }
-
+    &__icon {
+        width: 115px;
+        height: 115px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7fafc;
+        border-radius: 3.0px;
+        span {
+            font-size: 54px;
+            color: $sub-text-color;
+            text-shadow:rgba(0,0,0,0.1) 0 0 2px;
+        }
+    }
+    &__text {
+        width: 245px;
+        padding-left: 19px;
+    }
+    &__title {
+        font-family: Dosis;
+        font-size: 30px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #222222;
+        margin-bottom: 11px;
+    }
+    &__subtitle {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #777777;
+    }
 }

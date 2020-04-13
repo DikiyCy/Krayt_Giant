@@ -1,37 +1,226 @@
+// правила для размеров от 1923 до 1531
 @media (max-width: 1923px) {
-    // правила для размеров от 1531 до 1923
-    .navbar {
-        width: 254px;
-    }
+
 }
+// правила для размеров от 1530 до 1201
 @media (max-width: 1530px) {
-    // правила для размеров от 1201 до 1530
-    .navbar {
-        width: 194px;
+    .slider {
+        .container {
+            padding: 0 7%;
+        }
+        &-arrow {
+            width: calc(100% + 35px);
+        }
     }
+    .feedback {
+        padding-right: 30px;
+        padding-left: 30px;
+        &-arrow {
+            width: calc(100% + 105px);
+        }
+    }
+    .feedback {
+        .wrapper {
+            justify-content: center;
+            padding: 0 30px;
+        }
+        &-item {
+            width: calc(100%/4 + 20px);
+            margin: 0 30px 40px;
+        }
+        &-arrow {
+            width: calc(100%);
+        }
+    }
+
+
 }
+// правила для размеров от 1200 до 992
 @media (max-width: 1200px) {
-    // правила для размеров от 992 до 1200
-    .navbar {
-        width: 165px;
+    .header {
+        .container {
+            padding: 30px 30px 0 30px;
+        }
     }
+    .banner {
+        padding-top: 180px;
+        .container {
+            padding: 0px 30px 0 30px;
+        }
+    }
+    .functions {
+        padding: 30px 30px 0 30px;
+        .functions-catalog {
+            justify-content: space-around;
+        }
+    }
+    .helpdesk {
+        .container{
+            padding: 0px 30px 0 30px;
+        }
+    }
+    .slider {
+        padding: 60px;
+    }
+    .price {
+        .container {
+            padding: 0 30px;
+            margin: 0 auto;
+        }
+        &__catalog {
+            justify-content: space-around;
+        }
+        .item {
+            margin: 0 55px 40px;
+        }
+    }
+    .feedback {
+        .wrapper {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        &-item {
+            width: 460px;
+            margin: 0 20px 40px;
+        }
+        &-arrow {
+            top: 56%;
+            width: calc(90% + 20px);
+            margin: 0 10px 40px;
+        }
+    }
+    .download {
+        &__link {
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: 30px;
+        }
+    }
+
+
 }
+// правила для размеров от 991 до 768
 @media (max-width: 991px) {
-    // правила для размеров от 768 до 991
-    .navbar {
-        width: 135px;
+    .title {
+        font-size: 30px;
+    }
+    .helpdesk {
+        padding: 100px 0 100px 0;
+        .container {
+            flex-wrap: wrap-reverse;
+        }
+        &__img{
+            max-width: 600px;
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+            img {
+                left: 0;
+                top: 0;
+                transform: translate(-20%, -10%);
+                width: 150%;
+            }
+        }
+        .wrapper {
+            width: 90%;
+
+            .title_left {
+                line-height: 50px;
+            }
+            .subtitle_left {
+                margin: 0 0 50px 0;
+            }
+        }
+    }
+    .slider {
+        padding-bottom: 30px;
+        .subtitle {
+            margin-bottom: 40px;
+        }
+        &-carousel {
+            height: 375px;
+            &__posit {
+                &_1, &_7 {
+                    height: 210px;
+                }
+                &_2, &_6 {
+                    height: 270px;
+                }
+                &_3, &_5 {
+                    height: 330px;
+                }
+                &_4 {
+                    height: 375px;
+                }
+            }
+        }
+    }
+    .feedback {
+        &-item {
+            width: 360px;
+        }
     }
 }
+// __________mobile__________
+// правила для размеров от 767 до 576
 @media (max-width: 767px) {
-    // правила для размеров от 576 до 767
-    .navbar {
-        width: 105px;
+    .header {
+        .container {
+            align-items: flex-start;
+        }
+        &__link {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+        .wrapper {
+            margin-bottom: 20px;
+            margin-left: 50px;
+        }
     }
+    .helpdesk {
+        padding-bottom: 0;
+        &__img {
+            height: 310px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .slider {
+        .title {
+            line-height: 40px;
+        }
+    }
+    .feedback {
+        &-item {
+            min-width: 300px;
+        }
+    }
+
 }
+// правила для размеров от 575 до нуля(чаще320)
 @media (max-width: 575px) {
-    // правила для размеров от нуля(чаще320) до 575
-    .navbar {
-        width: 254px;
+    .helpdesk {
+        padding-bottom: 50px;
+        &__img {
+            display: none;
+        }
+    }
+    .slider {
+        &-arrow {
+           display: none;
+        }
+        .title {
+            line-height: 40px;
+        }
+    }
+    .feedback {
+        &-arrow {
+            display: none;
+        }
     }
 }
-    

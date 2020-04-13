@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    // -------popap for text from "functions"-------
+// -------popap for text from "functions"-------
 
     $('.functions-catalog__item').on('click', function() {
         $(this).find('.functions-catalog_hidden').toggleClass('hidden');
@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function() {
         $('.functions-catalog_hidden').fadeOut('fast');
     });
 
-    //--------slider-------------
+//--------slider-------------
     let addrImg = [
         'img/section_4_slider/img_0.png',
         'img/section_4_slider/img_1.png',
@@ -49,12 +49,48 @@ window.addEventListener('DOMContentLoaded', function() {
 
     $('.slider-arrow__right').on('click', function() {
 
-        for (let i = 1; i < addrImg.length; i++) {
+        for (let i = 0; i < addrImg.length; i++) {
             $('.slider-carousel__img' + i).attr('src', addrImg[i - 1]);
         }
 
         $('.slider-carousel__img0').attr('src', addrImg[addrImg.length - 1]);
         addrImg.unshift(addrImg.pop());
+    });
+
+// --------feedback-------------
+
+    let arrOrder = [
+        'temporary_class',
+        'feedback-item_order-1',
+        'feedback-item_order-2',
+        'feedback-item_order-3'
+    ];
+
+
+    $('.feedback-arrow__left').on('click', function() {
+
+        for (let i = 1; i < arrOrder.length; i++) {
+            $('.' + arrOrder[i]).removeClass('' + arrOrder[i]).addClass('' + arrOrder[i--]);
+        }
+        $('.' + arrOrder[0]).removeClass('' + arrOrder[0]).addClass('' + arrOrder[3]);
+
+    });
+
+
+
+    $('.feedback-arrow__right').on('click', function() {
+
+        // $('.' + arrOrder[3]).removeClass('' + arrOrder[3]).addClass('' + arrOrder[0]);
+
+        // for (let i = arrOrder.length - 1; i < 0; i--) {
+        //     $('.' + arrOrder[i]).removeClass('' + arrOrder[i]).addClass('' + arrOrder[i + 1]);
+        // }
+        // $('.' + arrOrder[0]).removeClass('' + arrOrder[0]).addClass('' + arrOrder[arrOrder.length-1]);
+
+        $('.' + arrOrder[3]).removeClass('' + arrOrder[3]).addClass('' + arrOrder[0]);
+        $('.' + arrOrder[2]).removeClass('' + arrOrder[2]).addClass('' + arrOrder[3]);
+        $('.' + arrOrder[1]).removeClass('' + arrOrder[1]).addClass('' + arrOrder[2]);
+        $('.' + arrOrder[0]).removeClass('' + arrOrder[0]).addClass('' + arrOrder[1]);
     });
 
 });

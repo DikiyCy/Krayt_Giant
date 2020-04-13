@@ -8,13 +8,12 @@
     .subtitle {
         margin-bottom: 76px;
     }
-    &_catalog {
+    &__catalog {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
     }
-
     .item {
         width: 263px;
         min-height: 481px;
@@ -38,9 +37,9 @@
                     border-color: transparent transparent #fff transparent;
                 }
             }
-            .item__price {
-                color: #fff;
-            }
+        }
+        &__price {
+            color: #fff;
         }
         &__name {
             font-family: Dosis;
@@ -88,35 +87,34 @@
             color: #333333;
             font-weight: 500;
             line-height: 24px;
-            // margin-bottom: 92px;
-            &-symb {
-                align-self: flex-start;
-            }
-            &-numb {
-                font-size: 48px;
-                line-height: 42px;
-            }
-            &-lett {
-                align-self: flex-end;
-            }
+        }
+        &__symb {
+            align-self: flex-start;
+        }
+        &__numb {
+            font-size: 48px;
+            line-height: 42px;
+        }
+        &__lett {
+            align-self: flex-end;
         }
         &__descr {
             margin-bottom: 41px;
-            &-text{
-                font-family: Roboto;
-                font-size: 14px;
-                line-height: 30px;
-                font-weight: 300;
-                color: $sub-text-color;
-            }
-            &-line {
-                margin: 3px auto 0px auto;
-                width: 202px;
-                height: 1px;
-                border: 1.0px solid #eeeeee;
-                border-bottom: none;
-            }
 
+        }
+        &__text{
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: 300;
+            color: $sub-text-color;
+        }
+        &__line {
+            margin: 3px auto 0px auto;
+            width: 202px;
+            height: 1px;
+            border: 1.0px solid #eeeeee;
+            border-bottom: none;
         }
         &__subtext {
             font-family: Roboto;
